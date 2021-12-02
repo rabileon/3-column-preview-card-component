@@ -1,0 +1,60 @@
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+$very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+$font-family-primary: "Lexend Deca", sans-serif;
+$font-family-secondary: "Big Shoulders Display", cursive;
+
+$font-size-regular: 15px;
+$font-size-title: 40px;
+
+body {
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $very-light-gray;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 920px;
+}
+.item {
+    &-orange {
+        background-color: $bright-orange;
+        border-radius: 8px 0 0 8px;
+    }
+    &-dark {
+        background-color: $dark-cyan;
+        border-radius: 8px;
+    }
+    &-very {
+        background-color: $very-dark-cyan;
+        border-radius: 0 8px 8px 0;
+    }
+
+    &__text {
+        color: $transparent-white;
+        font-size: $font-size-regular;
+    }
+
+    &__title {
+        font-family: $font-family-secondary;
+        text-transform: uppercase;
+        color: $very-light-gray;
+        font-size: $font-size-title;
+    }
+}

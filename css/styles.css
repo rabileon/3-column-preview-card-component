@@ -1,0 +1,65 @@
+/* paragraphs */
+/* background, headings, buttons */
+body {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  width: 920px;
+}
+
+.item-orange {
+  background-color: #e38826;
+  border-radius: 8px 0 0 8px;
+}
+.item-dark {
+  background-color: #006970;
+  border-radius: 8px;
+}
+.item-very {
+  background-color: #004241;
+  border-radius: 0 8px 8px 0;
+}
+.item__text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+.item__title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 40px;
+}
