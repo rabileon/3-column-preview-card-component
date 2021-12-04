@@ -29,37 +29,42 @@ main {
 .card {
     display: flex;
     justify-content: center;
-    height: 500px;
+    // height: 500px;
     width: 920px;
 }
 .item {
-    height: 500px;
-    width: 307px;
-    padding: 50px;
+    // height: 500px;
+
+    padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     &-orange {
+        width: 313px;
         background-color: $bright-orange;
         border-radius: 8px 0 0 8px;
     }
     &-dark {
+        width: 313px;
         position: relative;
         background-color: $dark-cyan;
         border-radius: 8px;
         left: -5px;
     }
     &-very {
+        width: 317px;
         position: relative;
         background-color: $very-dark-cyan;
         border-radius: 0 8px 8px 0;
-        left: -5px;
+        left: -10px;
+        z-index: -1;
     }
 
     &__text {
         color: $transparent-white;
         font-size: $font-size-regular;
         line-height: 25px;
+        margin-bottom: 40%;
     }
 
     &__title {

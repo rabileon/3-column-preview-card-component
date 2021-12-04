@@ -37,14 +37,11 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 500px;
   width: 920px;
 }
 
 .item {
-  height: 500px;
-  width: 307px;
-  padding: 50px;
+  padding: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,25 +54,30 @@ main {
           justify-content: space-between;
 }
 .item-orange {
+  width: 313px;
   background-color: #e38826;
   border-radius: 8px 0 0 8px;
 }
 .item-dark {
+  width: 313px;
   position: relative;
   background-color: #006970;
   border-radius: 8px;
   left: -5px;
 }
 .item-very {
+  width: 317px;
   position: relative;
   background-color: #004241;
   border-radius: 0 8px 8px 0;
-  left: -5px;
+  left: -10px;
+  z-index: -1;
 }
 .item__text {
   color: rgba(255, 255, 255, 0.75);
   font-size: 15px;
   line-height: 25px;
+  margin-bottom: 40%;
 }
 .item__title {
   font-family: "Big Shoulders Display", cursive;
