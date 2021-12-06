@@ -9,7 +9,7 @@
 3. Media Only
 
 ## Deploy
-[🚀 Deploy](https://rabileon.github.io/3-column-preview-card-component/")
+[🚀 Deploy](https://rabileon.github.io/3-column-preview-card-component/)
 
 ## Contact
 
