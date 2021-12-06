@@ -1,3 +1,5 @@
+/* Media Queries Mixin
+**********************/
 /* paragraphs */
 /* background, headings, buttons */
 body {
@@ -17,6 +19,12 @@ body {
   width: 100vw;
   background-color: #f2f2f2;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+}
 
 main {
   display: -webkit-box;
@@ -30,6 +38,18 @@ main {
           align-items: center;
 }
 
+.button-bright-orange {
+  color: #e38826;
+}
+
+.button-dark-cyan {
+  color: #006970;
+}
+
+.button-very-dark-cyan {
+  color: #004241;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +58,16 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 920px;
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    margin: 40px 15px;
+  }
 }
 
 .item {
@@ -58,12 +88,24 @@ main {
   background-color: #e38826;
   border-radius: 8px 0 0 8px;
 }
+@media only screen and (max-width: 768px) {
+  .item-orange {
+    border-radius: 8px 8px 0 0;
+  }
+}
 .item-dark {
   width: 313px;
   position: relative;
   background-color: #006970;
   border-radius: 8px;
   left: -5px;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .item-dark {
+    left: 0;
+    top: -5px;
+  }
 }
 .item-very {
   width: 317px;
@@ -71,7 +113,13 @@ main {
   background-color: #004241;
   border-radius: 0 8px 8px 0;
   left: -10px;
-  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .item-very {
+    left: 0;
+    border-radius: 0 0 8px 8px;
+    top: -10px;
+  }
 }
 .item__text {
   color: rgba(255, 255, 255, 0.75);
@@ -79,11 +127,21 @@ main {
   line-height: 25px;
   margin-bottom: 40%;
 }
+@media only screen and (max-width: 768px) {
+  .item__text {
+    margin: 10px 0;
+  }
+}
 .item__title {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
   color: #f2f2f2;
   font-size: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .item__title {
+    margin: 10px 0;
+  }
 }
 .item__button {
   background-color: #f2f2f2;
@@ -94,15 +152,23 @@ main {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
-
-.button-bright-orange {
-  color: #e38826;
+@media only screen and (max-width: 768px) {
+  .item__button {
+    left: 0;
+  }
 }
-
-.button-dark-cyan {
-  color: #006970;
+.item__button:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.75);
 }
-
-.button-very-dark-cyan {
-  color: #004241;
+@media only screen and (max-width: 768px) {
+  .item {
+    width: 327px;
+    height: 442px;
+    padding: 44px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }

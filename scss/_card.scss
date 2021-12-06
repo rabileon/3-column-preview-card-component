@@ -1,0 +1,95 @@
+.card {
+    display: flex;
+    justify-content: center;
+    width: 920px;
+    @include media(mobile-only) {
+        flex-direction: column;
+        width: auto;
+        margin: 40px 15px;
+    }
+}
+.item {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-orange {
+        width: 313px;
+        background-color: $bright-orange;
+        border-radius: 8px 0 0 8px;
+        @include media(mobile-only) {
+            border-radius: 8px 8px 0 0;
+        }
+    }
+    &-dark {
+        width: 313px;
+        position: relative;
+        background-color: $dark-cyan;
+        border-radius: 8px;
+        left: -5px;
+        z-index: 1;
+        @include media(mobile-only) {
+            left: 0;
+            top: -5px;
+        }
+    }
+    &-very {
+        width: 317px;
+        position: relative;
+        background-color: $very-dark-cyan;
+        border-radius: 0 8px 8px 0;
+        left: -10px;
+        @include media(mobile-only) {
+            left: 0;
+            border-radius: 0 0 8px 8px;
+            top: -10px;
+        }
+    }
+
+    &__text {
+        color: $transparent-white;
+        font-size: $font-size-regular;
+        line-height: 25px;
+        margin-bottom: 40%;
+        @include media(mobile-only) {
+            margin: 10px 0;
+        }
+    }
+
+    &__title {
+        font-family: $font-family-secondary;
+        text-transform: uppercase;
+        color: $very-light-gray;
+        font-size: $font-size-title;
+        @include media(mobile-only) {
+            margin: 10px 0;
+        }
+    }
+
+    &__button {
+        background-color: $very-light-gray;
+        width: 146px;
+        height: 48px;
+        border-radius: 25px;
+        border: none;
+        font-family: $font-family-primary;
+        font-size: $font-size-regular;
+        @include media(mobile-only) {
+            left: 0;
+        }
+    }
+
+    &__button:hover {
+        background-color: transparent;
+        color: $transparent-white;
+        cursor: pointer;
+        border: 2px solid $transparent-white;
+    }
+
+    @include media(mobile-only) {
+        width: 327px;
+        height: 442px;
+        padding: 44px;
+        box-sizing: border-box;
+    }
+}
